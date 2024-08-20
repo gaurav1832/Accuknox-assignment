@@ -29,7 +29,7 @@ This project is a dynamic dashboard application built with React and Tailwind CS
 2. **Navigate to the Project Directory**
 
     ```bash
-    cd dashboard-widget-manager
+    cd project-name
     ```
 
 3. **Install Dependencies**
@@ -63,39 +63,6 @@ This project is a dynamic dashboard application built with React and Tailwind CS
 3. **Search Widgets**
 
     - Use the search bar in the sidebar to find widgets by name.
-
-## Responsive Design
-
-- The dashboard adjusts the number of widgets displayed per row based on screen size. On smaller screens, fewer widgets are shown in each row to ensure a clean and usable layout.
-
-## Contributing
-
-1. **Fork the Repository**
-
-    Click the "Fork" button on GitHub to create your own copy of the project.
-
-2. **Create a Branch**
-
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-
-3. **Make Changes**
-
-    Implement your changes and test them.
-
-4. **Commit and Push**
-
-    ```bash
-    git add .
-    git commit -m "Add your commit message"
-    git push origin feature/your-feature
-    ```
-
-5. **Submit a Pull Request**
-
-    Go to the original repository and open a pull request.
- 
 
 ## Contact
 
