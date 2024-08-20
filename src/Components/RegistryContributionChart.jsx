@@ -1,39 +1,3 @@
-// import React from "react";
-// import { Bar } from "react-chartjs-2";
-// import { Chart, registerables } from "chart.js";
-// Chart.register(...registerables);
-
-// const RegistryContributionChart = ({ labels, dataValues, colors }) => {
-//   const data = {
-//     labels: labels,
-//     datasets: [
-//       {
-//         data: dataValues,
-//         backgroundColor: colors,
-//         borderColor: ["#FF5252", "#FF8C00", "#FFD700", "#1E90FF", "#4CAF50"],
-//         borderWidth: 1,
-//       },
-//     ],
-//   };
-
-//   const options = {
-//     maintainAspectRatio: false,
-//     scales: {
-//       y: {
-//         beginAtZero: true,
-//       },
-//     },
-//   };
-
-//   return (
-//     <div className="relative w-full h-64">
-//       <Bar data={data} options={options} />
-//     </div>
-//   );
-// };
-
-// export default RegistryContributionChart;
-
 import React from "react";
 import {
   BarChart,
@@ -45,7 +9,7 @@ import {
   Legend,
 } from "recharts";
 
-const RiskAssessmentChart = ({ graphData }) => {
+const RegistryContributionChart = ({ graphData }) => {
   const data = [
     {
       name: graphData.total,
@@ -62,7 +26,6 @@ const RiskAssessmentChart = ({ graphData }) => {
       <BarChart layout="vertical" data={data} stackOffset="expand">
         <XAxis type="number" hide />
         <YAxis type="category" dataKey="name" hide />
-        <Tooltip />
         <Legend />
         <Bar
           dataKey="Critical"
@@ -84,4 +47,4 @@ const RiskAssessmentChart = ({ graphData }) => {
   );
 };
 
-export default RiskAssessmentChart;
+export default RegistryContributionChart;
