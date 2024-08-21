@@ -7,7 +7,6 @@ import { FaUserCircle } from "react-icons/fa";
 const Header = () => {
   const [query, setQuery] = useState("");
   const searchWidgets = useDashboardStore((state) => state.searchWidgets);
-  // const searchResults = useDashboardStore((state) => state.searchResults);
 
   const handleSearchChange = (e) => {
     const value = e.target.value;

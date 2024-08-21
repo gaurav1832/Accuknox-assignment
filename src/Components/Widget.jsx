@@ -13,7 +13,6 @@ const Widget = ({ categoryId, widget }) => {
       return (
         <div className="ml-0">
           {" "}
-          {/* Adjust margin */}
           <GeneralDoughnutChart
             labels={[
               `Connected (${widget.graphData.connected})`,
@@ -56,7 +55,6 @@ const Widget = ({ categoryId, widget }) => {
       return (
         <div className="ml-0">
           {" "}
-          {/* Adjust margin */}
           <h1 className="flex items-center gap-2 text-md truncate mb-1">
             <p className="text-xl font-bold">{widget.graphData.total} </p> Total{" "}
             {widget.name === "Image Risk Assessment"
