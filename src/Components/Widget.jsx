@@ -18,10 +18,7 @@ const Widget = ({ categoryId, widget }) => {
               `Connected (${widget.graphData.connected})`,
               `Not Connected (${widget.graphData.notConnected})`,
             ]}
-            dataValues={[
-              widget.graphData.notConnected,
-              widget.graphData.connected,
-            ]}
+            dataValues={widget.graphData}
             colors={["#cbd6f5", "#5a80f2"]}
           />
         </div>
@@ -30,7 +27,6 @@ const Widget = ({ categoryId, widget }) => {
       return (
         <div className="ml-0">
           {" "}
-          {/* Adjust margin */}
           <GeneralDoughnutChart
             labels={[
               `Passed (${widget.graphData.passed})`,
@@ -38,12 +34,7 @@ const Widget = ({ categoryId, widget }) => {
               `Warning (${widget.graphData.warning})`,
               `Not Available (${widget.graphData.notAvailable})`,
             ]}
-            dataValues={[
-              widget.graphData.passed,
-              widget.graphData.failed,
-              widget.graphData.warning,
-              widget.graphData.notAvailable,
-            ]}
+            dataValues={widget.graphData}
             colors={["#4CAF50", "#FF5252", "#FFC107", "#9E9E9E"]}
           />
         </div>
